@@ -14,15 +14,12 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h1 className="text-3xl sm:text-6xl lg:text-8xl font-space-grotesk font-bold mb-4 leading-snug sm:leading-tight">
-            <span className="text-gradient-primary">Visualize Your</span>
-            <br />
-            <span className="text-white">Future Physique</span>
-            <br />
-            <span className="text-gradient-secondary">with AI</span>
+          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-400 mb-2">AI-Powered Fitness</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight">
+            Visualize Your <span className="text-gradient-secondary">Future Physique</span> with AI
           </h1>
           
-          <p className="text-sm sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2">
+          <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2">
             Transform your fitness journey with AI-powered predictions, 
             personalized coaching, and futuristic progress visualization.
           </p>
@@ -37,7 +34,7 @@ const HeroSection = () => {
         >
           <Link
             to="/form"
-            className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-4 sm:px-12 sm:py-5 font-semibold mx-auto"
+            className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 font-semibold mx-auto"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="h-6 w-6" />
