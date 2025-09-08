@@ -5,12 +5,11 @@ import './index.css'
 
 const Root = () => {
   useEffect(() => {
-    window.addEventListener('load', () => {
-      document.body.classList.add('page-loaded')
-    })
-    return () => {
-      document.body.classList.add('page-loaded')
-    }
+    // Ensure body becomes visible even if load already fired
+    document.body.classList.add('page-loaded')
+    const onLoad = () => document.body.classList.add('page-loaded')
+    window.addEventListener('load', onLoad)
+    return () => window.removeEventListener('load', onLoad)
   }, [])
   return (
     <React.StrictMode>
