@@ -4,6 +4,7 @@ import { ArrowRight, Zap, Target, TrendingUp } from 'lucide-react'
 import MotivationCarousel from './MotivationCarousel'
 import FeedbackSection from './FeedbackSection'
 import ThreeAccent from './ThreeAccent'
+import Gym3DSection from './Gym3DSection'
 
 const HeroSection = () => {
   return (
@@ -95,6 +96,11 @@ const HeroSection = () => {
         {/* Feedback section */}
         <div className="mt-12">
           <FeedbackSection />
+        </div>
+
+        {/* Gym 3D section */}
+        <div className="mt-4">
+          <Gym3DSection />
         </div>
 
         {/* Floating Elements */}

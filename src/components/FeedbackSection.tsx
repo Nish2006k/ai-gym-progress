@@ -72,7 +72,12 @@ const FeedbackSection = () => {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="min-w-[280px] sm:min-w-[360px] snap-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6"
             >
-              <div className="h-10 w-10 rounded-full bg-gradient-to-r from-primary to-secondary mb-4" />
+              <img
+                src={`https://i.pravatar.cc/80?img=${(idx + 4) * 3}`}
+                alt={f.name}
+                className="h-10 w-10 rounded-full mb-4 object-cover"
+                loading="lazy"
+              />
               <p className="text-slate-200 text-base leading-relaxed mb-4">“{f.quote}”</p>
               <div className="text-sm text-slate-400">
                 <span className="font-semibold text-white">{f.name}</span>
