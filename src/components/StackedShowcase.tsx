@@ -23,7 +23,7 @@ const Card = ({ delay, rotate }: { delay: number; rotate: number }) => (
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.6, delay }}
     animate={{ y: [20, 0, 20] }}
-    className="relative w-[300px] sm:w-[360px] h-[640px] rounded-[36px] bg-white shadow-2xl border border-black/10 overflow-hidden pop-in"
+    className="relative w-[300px] sm:w-[360px] h-[640px] rounded-[36px] bg-white shadow-2xl border border-black/10 overflow-hidden pop-in card-soft-glow"
     style={{ transform: `rotate(${rotate}deg)` }}
   >
     <div className="absolute inset-0 p-5 flex flex-col">

@@ -22,7 +22,7 @@ const HeroSection = () => {
             Visualize Your <span className="text-gradient-secondary">Future Physique</span> with AI
           </h1>
           
-          <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2">
+          <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2 text-soft-glow">
             Transform your fitness journey with AI-powered predictions, 
             personalized coaching, and futuristic progress visualization.
           </p>
