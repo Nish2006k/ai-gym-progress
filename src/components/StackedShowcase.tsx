@@ -25,6 +25,8 @@ const Card = ({ delay, rotate }: { delay: number; rotate: number }) => (
     animate={{ y: [20, 0, 20] }}
     className="relative w-[300px] sm:w-[360px] h-[640px] rounded-[36px] bg-white shadow-2xl border border-black/10 overflow-hidden pop-in card-soft-glow"
     style={{ transform: `rotate(${rotate}deg)` }}
+    data-animate
+    data-tilt
   >
     <div className="absolute inset-0 p-5 flex flex-col">
       <div className="mb-3">

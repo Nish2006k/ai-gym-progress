@@ -5,6 +5,7 @@ import MotivationCarousel from './MotivationCarousel'
 import FeedbackSection from './FeedbackSection'
 // import ThreeAccent from './ThreeAccent'
 import StackedShowcase from './StackedShowcase'
+import VideoScroll from './VideoScroll'
 
 const HeroSection = () => {
   return (
@@ -17,12 +18,14 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-300 mb-2">AI-Powered Fitness</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight text-white text-soft-glow">
+          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-300 mb-2" data-animate data-fade-on-scroll>
+            AI-Powered Fitness
+          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight text-white text-soft-glow" data-animate>
             Visualize Your <span className="text-gradient-secondary">Future Physique</span> with AI
           </h1>
           
-          <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2 text-soft-glow">
+          <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2 text-soft-glow" data-animate>
             Transform your fitness journey with AI-powered predictions, 
             personalized coaching, and futuristic progress visualization.
           </p>
@@ -92,6 +95,9 @@ const HeroSection = () => {
         <div className="mt-8">
           <StackedShowcase />
         </div>
+
+        {/* Scroll-controlled video */}
+        <VideoScroll />
 
         {/* Feedback section */}
         <div className="mt-12">

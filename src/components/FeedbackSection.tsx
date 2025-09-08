@@ -54,7 +54,7 @@ const FeedbackSection = () => {
   return (
     <section className="py-16 sm:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10" data-animate>
           <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-400">What people say</p>
           <h2 className="text-3xl sm:text-4xl font-space-grotesk font-bold text-white text-soft-glow">
             Loved by early users
@@ -71,6 +71,7 @@ const FeedbackSection = () => {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="min-w-[280px] sm:min-w-[360px] snap-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 pop-in card-soft-glow"
+              data-animate
             >
               <img
                 src={`https://i.pravatar.cc/80?img=${(idx + 4) * 3}`}
