@@ -12,18 +12,18 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <Dumbbell className="h-8 w-8 text-primary-400 group-hover:text-primary-300 transition-colors duration-300" />
-            <span className="text-xl font-space-grotesk font-bold text-gradient-primary">
+            <span className="text-lg sm:text-xl font-space-grotesk font-bold text-gradient-primary">
               AI Gym Progress
             </span>
           </Link>
 
           {/* Navigation Links */}
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-4 sm:space-x-8">
             <Link
               to="/dashboard"
               className={`flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 ${
@@ -38,7 +38,7 @@ const Navbar = () => {
 
             <Link
               to="/form"
-              className="gradient-button text-sm px-6 py-2"
+              className="gradient-button text-xs sm:text-sm px-4 py-2 sm:px-6"
             >
               Start Journey
             </Link>

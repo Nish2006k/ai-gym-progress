@@ -5,8 +5,8 @@ import MotivationCarousel from './MotivationCarousel'
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-12 flex flex-col">
-      <div className="max-w-7xl mx-auto text-center flex-1 flex flex-col justify-center">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-10 sm:pb-12 flex flex-col">
+      <div className="max-w-7xl mx-auto text-center flex-1 flex flex-col justify-start sm:justify-center">
         {/* Main Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
