@@ -17,8 +17,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <Dumbbell className="h-8 w-8 text-primary-400 group-hover:text-primary-300 transition-colors duration-300" />
-            <span className="text-lg sm:text-xl font-space-grotesk font-bold text-gradient-primary">
-              AI Gym Progress
+            <span className="text-lg sm:text-xl font-space-grotesk font-bold brand-gradient">
+              FitwithAI
             </span>
           </Link>
 

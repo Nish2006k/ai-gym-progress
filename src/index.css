@@ -52,6 +52,14 @@
   .gradient-text {
     @apply bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
   }
+
+  .brand-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent transition-all duration-300;
+  }
+  .brand-gradient:hover {
+    @apply from-accent to-primary drop-shadow;
+    filter: brightness(1.1);
+  }
   
   .gradient-text-secondary {
     @apply bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent;
