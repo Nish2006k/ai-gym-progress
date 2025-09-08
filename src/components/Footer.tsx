@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, Github, Linkedin, Twitter, Heart, ArrowUp } from 'lucide-react'
+import { Mail, Github, Linkedin, Heart, ArrowUp } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 const Footer = () => {

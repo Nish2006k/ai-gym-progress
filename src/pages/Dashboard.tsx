@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Calendar, TrendingUp, Target, Trash2, Eye } from 'lucide-react'
+import { Calendar, Target, Trash2, Eye } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
 interface SavedResult {

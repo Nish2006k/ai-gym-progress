@@ -8,8 +8,8 @@ const ParticleBackground = () => {
     await loadSlim(engine)
   }, [])
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    // Particles loaded
+  const particlesLoaded = useCallback(async (_container: Container | undefined) => {
+    // intentionally unused
   }, [])
 
   return (
