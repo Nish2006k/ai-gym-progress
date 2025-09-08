@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Zap, Target, TrendingUp } from 'lucide-react'
 import MotivationCarousel from './MotivationCarousel'
 import FeedbackSection from './FeedbackSection'
-import ThreeAccent from './ThreeAccent'
-import Gym3DSection from './Gym3DSection'
-import FloatingMuscle from './FloatingMuscle'
+// import ThreeAccent from './ThreeAccent'
+import StackedShowcase from './StackedShowcase'
 
 const HeroSection = () => {
   return (
@@ -36,9 +35,6 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20"
         >
-          <div className="mb-6">
-            <FloatingMuscle />
-          </div>
           <Link
             to="/form"
             className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 font-semibold mx-auto"
@@ -92,19 +88,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Animated gradient accent */}
-        <div className="mt-10 max-w-4xl mx-auto">
-          <ThreeAccent height={120} />
+        {/* Stacked product-like showcase */}
+        <div className="mt-8">
+          <StackedShowcase />
         </div>
 
         {/* Feedback section */}
         <div className="mt-12">
           <FeedbackSection />
-        </div>
-
-        {/* Gym 3D section */}
-        <div className="mt-4">
-          <Gym3DSection />
         </div>
 
         {/* Floating Elements */}
