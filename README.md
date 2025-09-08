@@ -86,6 +86,12 @@ A futuristic and motivational fitness app that uses AI to predict your fitness p
 3. Add environment variables in Vercel dashboard
 4. Deploy!
 
+### SEO & Analytics
+- `index.html` includes Open Graph and Twitter meta tags
+- Add `public/og-image.png` for link previews
+- Provide `public/robots.txt` and `public/sitemap.xml` for better indexing
+- Integrate analytics (e.g., Vercel Analytics or Plausible)
+
 ### Other Platforms
 The app can be deployed to any platform that supports React applications:
 - Netlify

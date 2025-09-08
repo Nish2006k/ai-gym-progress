@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import FormPage from './pages/FormPage'
-import ResultsPage from './pages/ResultsPage'
-import Dashboard from './pages/Dashboard'
 import Footer from './components/Footer'
 import ParticleBackground from './components/ParticleBackground'
+
+const HeroSection = lazy(() => import('./components/HeroSection'))
+const FormPage = lazy(() => import('./pages/FormPage'))
+const ResultsPage = lazy(() => import('./pages/ResultsPage'))
+const Dashboard = lazy(() => import('./pages/Dashboard'))
 
 function App() {
   return (
@@ -19,12 +21,14 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Routes>
-            <Route path="/" element={<HeroSection />} />
-            <Route path="/form" element={<FormPage />} />
-            <Route path="/results" element={<ResultsPage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
+          <Suspense fallback={<div className="pt-24 text-center text-white">Loading...</div>}>
+            <Routes>
+              <Route path="/" element={<HeroSection />} />
+              <Route path="/form" element={<FormPage />} />
+              <Route path="/results" element={<ResultsPage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+          </Suspense>
         </motion.div>
         <Footer />
       </div>

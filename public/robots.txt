@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://ai-gym-progress.vercel.app/sitemap.xml
+
+
