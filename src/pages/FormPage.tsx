@@ -233,7 +233,7 @@ const FormPage = () => {
               disabled={isLoading}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full neon-button text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full neon-button text-base sm:text-lg py-4 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <div className="flex items-center justify-center space-x-2">

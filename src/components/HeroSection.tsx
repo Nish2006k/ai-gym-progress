@@ -78,6 +78,13 @@ const HeroSection = () => {
           <MotivationCarousel height="h-80" />
         </div>
 
+        {/* Subtle 3D-like scroll cue */}
+        <div className="mt-10 flex justify-center">
+          <div className="w-10 h-16 rounded-full border-2 border-black/10 bg-white/30 backdrop-blur-md relative shadow-md">
+            <div className="absolute left-1/2 -translate-x-1/2 top-3 w-2 h-2 rounded-full bg-black/50 animate-bounce"></div>
+          </div>
+        </div>
+
         {/* Floating Elements */}
         <div className="hidden md:block absolute top-20 left-10 animate-float">
           <div className="w-4 h-4 bg-neon-purple rounded-full opacity-60"></div>
