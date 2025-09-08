@@ -40,8 +40,8 @@ const FeedbackSection = () => {
     <section className="py-16 sm:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-500">What people say</p>
-          <h2 className="text-3xl sm:text-4xl font-space-grotesk font-bold text-[#212121]">
+          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-400">What people say</p>
+          <h2 className="text-3xl sm:text-4xl font-space-grotesk font-bold text-white">
             Loved by early users
           </h2>
         </div>
@@ -54,12 +54,12 @@ const FeedbackSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-2xl border border-black/5 bg-white shadow-sm p-6"
+              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6"
             >
               <div className="h-10 w-10 rounded-full bg-gradient-to-r from-primary to-secondary mb-4" />
-              <p className="text-[#212121] text-base leading-relaxed mb-4">“{f.quote}”</p>
-              <div className="text-sm text-slate-600">
-                <span className="font-semibold text-[#212121]">{f.name}</span>
+              <p className="text-slate-200 text-base leading-relaxed mb-4">“{f.quote}”</p>
+              <div className="text-sm text-slate-400">
+                <span className="font-semibold text-white">{f.name}</span>
                 <span> • {f.role}</span>
               </div>
             </motion.div>

@@ -16,8 +16,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-400 mb-2">AI-Powered Fitness</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight">
+          <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-300 mb-2">AI-Powered Fitness</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight text-white">
             Visualize Your <span className="text-gradient-secondary">Future Physique</span> with AI
           </h1>
           

@@ -24,8 +24,8 @@ export default {
           DEFAULT: '#FF6D00',
           500: '#FF6D00',
         },
-        'bg': '#F9FAFB',
-        'text': '#212121',
+        'bg': '#0B1220',
+        'text': '#E5E7EB',
         'purple': {
           50: '#faf5ff',
           100: '#f3e8ff',
