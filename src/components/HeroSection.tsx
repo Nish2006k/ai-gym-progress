@@ -5,6 +5,7 @@ import MotivationCarousel from './MotivationCarousel'
 import FeedbackSection from './FeedbackSection'
 import ThreeAccent from './ThreeAccent'
 import Gym3DSection from './Gym3DSection'
+import FloatingMuscle from './FloatingMuscle'
 
 const HeroSection = () => {
   return (
@@ -35,6 +36,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-20"
         >
+          <div className="mb-6">
+            <FloatingMuscle />
+          </div>
           <Link
             to="/form"
             className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 font-semibold mx-auto"
