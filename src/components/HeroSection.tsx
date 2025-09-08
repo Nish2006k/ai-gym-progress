@@ -5,8 +5,8 @@ import MotivationCarousel from './MotivationCarousel'
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
-      <div className="max-w-7xl mx-auto text-center">
+    <div className="min-h-screen px-4 sm:px-6 lg:px-8 pt-24 pb-12 flex flex-col">
+      <div className="max-w-7xl mx-auto text-center flex-1 flex flex-col justify-center">
         {/* Main Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,7 +14,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="mb-12"
         >
-          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-space-grotesk font-bold mb-8 leading-tight">
+          <h1 className="text-3xl sm:text-6xl lg:text-8xl font-space-grotesk font-bold mb-4 leading-snug sm:leading-tight">
             <span className="text-gradient-primary">Visualize Your</span>
             <br />
             <span className="text-white">Future Physique</span>
@@ -22,7 +22,7 @@ const HeroSection = () => {
             <span className="text-gradient-secondary">with AI</span>
           </h1>
           
-          <p className="text-xl sm:text-2xl text-slate-300 max-w-4xl mx-auto leading-relaxed font-inter">
+          <p className="text-sm sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-inter px-2">
             Transform your fitness journey with AI-powered predictions, 
             personalized coaching, and futuristic progress visualization.
           </p>
@@ -37,7 +37,7 @@ const HeroSection = () => {
         >
           <Link
             to="/form"
-            className="inline-flex items-center space-x-3 gradient-button text-lg px-12 py-5 font-semibold"
+            className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-4 sm:px-12 sm:py-5 font-semibold mx-auto"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="h-6 w-6" />
@@ -49,7 +49,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+          className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto"
         >
           <div className="glass-card glass-card-hover p-8 group">
             <Zap className="h-14 w-14 text-primary-400 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300" />
@@ -77,18 +77,18 @@ const HeroSection = () => {
         </motion.div>
 
         {/* Motivation Carousel */}
-        <div className="mt-16 max-w-5xl mx-auto">
+        <div className="hidden sm:block mt-12 max-w-5xl mx-auto">
           <MotivationCarousel height="h-80" />
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute top-20 left-10 animate-float">
+        <div className="hidden md:block absolute top-20 left-10 animate-float">
           <div className="w-4 h-4 bg-neon-purple rounded-full opacity-60"></div>
         </div>
-        <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="hidden md:block absolute top-40 right-20 animate-float" style={{ animationDelay: '2s' }}>
           <div className="w-6 h-6 bg-neon-blue rounded-full opacity-40"></div>
         </div>
-        <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
+        <div className="hidden md:block absolute bottom-40 left-20 animate-float" style={{ animationDelay: '4s' }}>
           <div className="w-3 h-3 bg-neon-green rounded-full opacity-50"></div>
         </div>
       </div>
