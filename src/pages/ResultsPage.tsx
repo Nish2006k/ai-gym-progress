@@ -109,6 +109,20 @@ const ResultsPage = () => {
     alert('Progress saved successfully!')
   }
 
+  const currentUrl = typeof window !== 'undefined' ? window.location.origin : 'https://ai-gym-progress.vercel.app'
+  const shareText = 'Visualize your future physique with AI Gym Progress '
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(currentUrl)}`
+  const linkedinUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl)
+      alert('Link copied to clipboard!')
+    } catch {
+      alert(currentUrl)
+    }
+  }
+
   if (isLoading) {
     return (
       <div className="min-h-screen pt-20 flex items-center justify-center">
@@ -211,13 +225,25 @@ const ResultsPage = () => {
                 </p>
               </div>
 
-              <div className="flex items-center justify-center space-x-4">
+              <div className="flex items-center justify-center space-x-4 mb-4">
                 <button
                   onClick={handleSaveProgress}
                   className="flex items-center space-x-2 neon-button"
                 >
                   <Save className="h-5 w-5" />
                   <span>Save Progress</span>
+                </button>
+              </div>
+
+              <div className="flex items-center justify-center gap-3">
+                <a href={twitterUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-colors">
+                  Share on Twitter
+                </a>
+                <a href={linkedinUrl} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-colors">
+                  Share on LinkedIn
+                </a>
+                <button onClick={handleCopyLink} className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white hover:bg-white/20 transition-colors">
+                  Copy Link
                 </button>
               </div>
             </div>
