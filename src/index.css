@@ -105,6 +105,8 @@
 }
 
 @layer utilities {
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
   .text-shadow {
     text-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
   }

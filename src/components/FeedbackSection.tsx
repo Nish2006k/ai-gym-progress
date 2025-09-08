@@ -21,6 +21,21 @@ const FEEDBACKS = [
     name: 'Maya P.',
     role: 'Strength Training',
     quote: 'I love the visualization. It turns goals into something I can actually see.'
+  },
+  {
+    name: 'Ishaan R.',
+    role: 'College Athlete',
+    quote: 'Macros + weekly forecast = zero guesswork. My weight trend finally makes sense.'
+  },
+  {
+    name: 'Neha V.',
+    role: 'Busy Professional',
+    quote: 'The UI is calming and fast. I check the dashboard every morning like a habit.'
+  },
+  {
+    name: 'Leo T.',
+    role: 'Powerlifter',
+    quote: 'Great for planning deloads. The projections kept me from overreaching.'
   }
 ]
 
@@ -46,7 +61,8 @@ const FeedbackSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Horizontal scroll with snap for a smooth, native feel */}
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2 scrollbar-hide" style={{ scrollBehavior: 'smooth' }}>
           {items.map((f, idx) => (
             <motion.div
               key={f.name}
@@ -54,7 +70,7 @@ const FeedbackSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6"
+              className="min-w-[280px] sm:min-w-[360px] snap-center rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6"
             >
               <div className="h-10 w-10 rounded-full bg-gradient-to-r from-primary to-secondary mb-4" />
               <p className="text-slate-200 text-base leading-relaxed mb-4">“{f.quote}”</p>
