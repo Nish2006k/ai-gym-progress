@@ -36,6 +36,7 @@
   .glass-card {
     @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    overflow: visible; /* ensure native dropdowns are not clipped */
   }
   
   .glass-card-hover {
