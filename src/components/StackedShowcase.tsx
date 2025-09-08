@@ -23,13 +23,13 @@ const Card = ({ delay, rotate }: { delay: number; rotate: number }) => (
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.6, delay }}
     animate={{ y: [20, 0, 20] }}
-    className="relative w-[300px] sm:w-[360px] h-[640px] rounded-[36px] bg-white shadow-2xl border border-black/10 overflow-hidden"
+    className="relative w-[300px] sm:w-[360px] h-[640px] rounded-[36px] bg-white shadow-2xl border border-black/10 overflow-hidden pop-in"
     style={{ transform: `rotate(${rotate}deg)` }}
   >
     <div className="absolute inset-0 p-5 flex flex-col">
       <div className="mb-3">
         <p className="text-xs uppercase tracking-wide text-slate-500">Today • Workout</p>
-        <h3 className="text-lg font-bold text-slate-900">Shoulders</h3>
+        <h3 className="text-lg font-bold text-slate-900 text-soft-glow">Shoulders</h3>
       </div>
       <div className="space-y-3">
         <ExerciseRow name="Overhead Press" sets={4} reps={6} weight="25 kg" />

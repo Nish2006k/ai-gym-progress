@@ -18,7 +18,7 @@ const HeroSection = () => {
           className="mb-12"
         >
           <p className="uppercase tracking-wide text-xs sm:text-sm text-slate-300 mb-2">AI-Powered Fitness</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-space-grotesk font-bold mb-3 leading-tight text-white text-soft-glow">
             Visualize Your <span className="text-gradient-secondary">Future Physique</span> with AI
           </h1>
           
@@ -37,7 +37,7 @@ const HeroSection = () => {
         >
           <Link
             to="/form"
-            className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 font-semibold mx-auto"
+            className="inline-flex items-center justify-center space-x-3 gradient-button w-full max-w-xs sm:max-w-none text-base sm:text-lg px-6 py-3 sm:px-10 sm:py-4 font-semibold mx-auto pop-in"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="h-6 w-6" />
