@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Zap, Target, TrendingUp } from 'lucide-react'
 import MotivationCarousel from './MotivationCarousel'
+import FeedbackSection from './FeedbackSection'
+import ThreeAccent from './ThreeAccent'
 
 const HeroSection = () => {
   return (
@@ -83,6 +85,16 @@ const HeroSection = () => {
           <div className="w-10 h-16 rounded-full border-2 border-black/10 bg-white/30 backdrop-blur-md relative shadow-md">
             <div className="absolute left-1/2 -translate-x-1/2 top-3 w-2 h-2 rounded-full bg-black/50 animate-bounce"></div>
           </div>
+        </div>
+
+        {/* Animated gradient accent */}
+        <div className="mt-10 max-w-4xl mx-auto">
+          <ThreeAccent height={120} />
+        </div>
+
+        {/* Feedback section */}
+        <div className="mt-12">
+          <FeedbackSection />
         </div>
 
         {/* Floating Elements */}
