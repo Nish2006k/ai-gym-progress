@@ -14,8 +14,8 @@
   }
   
   body {
-    @apply bg-slate-950 text-slate-100 font-inter overflow-x-hidden;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 100%);
+    @apply text-[#212121] font-inter overflow-x-hidden;
+    background: #F9FAFB;
     min-height: 100vh;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     text-rendering: optimizeLegibility;
@@ -44,7 +44,7 @@
   }
   
   .gradient-button {
-    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white font-semibold py-3 px-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25;
+    @apply bg-gradient-to-r from-primary to-accent text-white font-semibold py-3 px-8 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/25;
     background-size: 200% 200%;
     animation: gradient-shift 3s ease infinite;
   }
@@ -81,15 +81,15 @@
   }
 
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 
   .text-gradient-secondary {
-    @apply bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent;
   }
 
   .text-gradient-accent {
-    @apply bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
   }
 }
 
