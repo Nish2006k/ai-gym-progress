@@ -19,7 +19,7 @@ const ExerciseRow = ({ name, sets, reps, weight }: { name: string; sets: number;
 const Card = ({ delay, rotate }: { delay: number; rotate: number }) => (
   <motion.div
     initial={{ y: 60, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
+    whileInView={{ y: 0, opacity: 1, scale: [0.98, 1] }}
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.6, delay }}
     animate={{ y: [20, 0, 20] }}
